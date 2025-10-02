@@ -5,6 +5,7 @@ public class MyStack {
     private int count;
     private String [] element;
     private static final int length = 5;
+
     public MyStack() {
         this.element = new String [length];
         this.count = 0;
@@ -32,6 +33,7 @@ public class MyStack {
         }
         return this.element[count-1];
     }
+
 
 
 }
