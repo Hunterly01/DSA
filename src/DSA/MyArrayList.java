@@ -36,16 +36,7 @@ public class MyArrayList {
 
          count = 0;
     }
-    public void ensureCapacity(int minCapacity) {
-        if (minCapacity > element.length) {
-            String[] temp = new String[minCapacity];
-            for(int count = 0; count < minCapacity; count++) {
-                temp[count] = element[count];
-            }
-            element = temp;
-            size = minCapacity;
-        }
-    }
+
 
     public String get(int index){
         if (index < 0 || index >= count) {
